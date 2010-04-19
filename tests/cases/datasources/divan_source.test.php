@@ -53,8 +53,8 @@ class DivanSourceTest extends CakeTestCase {
 			'persistent' => false,
 			'host' => 'localhost',
 			'port' => '5984',
-			'login' => 'root',
-			'password' => '',
+			'user' => '',
+			'pass' => '',
 		);
 
 		$this->Divan = new DivanSource($config);

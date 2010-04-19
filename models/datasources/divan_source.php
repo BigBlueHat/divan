@@ -161,6 +161,8 @@ class DivanSource extends DataSource {
 	}
 
 	/**
+	 * TODO: auto-set 'type' key in document to model name (perhaps if type is not yet set)
+	 *
 	 * Creates a document.
 	 *
 	 * @param object $model   Reference to calling model
@@ -246,6 +248,8 @@ class DivanSource extends DataSource {
 	}
 
 	/**
+	 * TODO: switch this to use views
+	 *
 	 * Gets full 'table' name (including prefix, if set), based on
 	 * passed model object.
 	 *
@@ -267,6 +271,8 @@ class DivanSource extends DataSource {
 	}
 
 	/**
+	 * TODO: use database name for the root URL, and table names only for lookups in views
+	 *
 	 * Creates the URI for the model representation
 	 *
 	 * @param  mixed  $model Model object reference
@@ -296,5 +302,3 @@ class DivanSource extends DataSource {
 		return json_decode($data);
 	}
 }
-
-?>
